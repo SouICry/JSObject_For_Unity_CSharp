@@ -10,9 +10,13 @@ It works fine for smaller projects and during development, but I would recommend
 dynamic objects from this class mostly function the same way as JavaScript objects/variables, with properties accessible by `["property_name"]`, arrays accessible by `[index]` and mixed data type storage. These are backed by `Dictionary<string, dynamic>, `List<dynamic>` and data storage with implicitly converting type.
 
 Ex. 
+
 `dynamic d = 1; 
+
 int i = 5 * d;   //5 
+
 string s = d + i + " digits"; //"7 digits" 
+
 float f = d % 4;  //1.0`
  
 Supports string, float, int, bool, List(dynamic) and List{string, dynamic}. Doubles are automatically converted to floats. Nests infinitely. 
