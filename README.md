@@ -7,11 +7,11 @@ It works fine for smaller projects and during development, but I would recommend
 
  
 #About
-dynamic objects from this class mostly function the same way as JavaScript objects/variables, with properties accessible by `["property_name"]`, arrays accessible by `[index]` and mixed data type storage. These are backed by `Dictionary<string, dynamic>, `List<dynamic>` and data storage with implicitly converting type.
+JSObject objects from this class mostly function the same way as JavaScript objects/variables, with properties accessible by `["property_name"]`, arrays accessible by `[index]` and mixed data type storage. These are backed by `Dictionary<string, JSObject>, `List<JSObject>` and data storage with implicitly converting type.
 
 Ex. 
 
-`dynamic d = 1; 
+`JSObject d = 1; 
 
 int i = 5 * d;   //5 
 
@@ -19,12 +19,12 @@ string s = d + i + " digits"; //"7 digits"
 
 float f = d % 4;  //1.0`
  
-Supports string, float, int, bool, List(dynamic) and List{string, dynamic}. Doubles are automatically converted to floats. Nests infinitely. 
+Supports string, float, int, bool, List(JSObject) and List{string, JSObject}. Doubles are automatically converted to floats. Nests infinitely. 
 
 #Usage 
-Values or references can be directly assigned from or to this dynamic object. Loosely typed, so most cast errors only show up at run time as an exception. 
+Values or references can be directly assigned from or to this JSObject object. Loosely typed, so most cast errors only show up at run time as an exception. 
 
-    dynamic d = "squid"; 
+    JSObject d = "squid"; 
 	
     string s = d;                    //No cast necessary 
 	
@@ -39,9 +39,9 @@ Values or references can be directly assigned from or to this dynamic object. Lo
  
 Some common methods and properties are implemented for List and Dictionary. The rest can be accessed by assigning it to a correct type reference. 
 
-	dynamic d = new Dictionary{string, dynamic}();  
+	JSObject d = new Dictionary{string, JSObject}();  
 	
-	d.Add("key", new List{dynamic});           
+	d.Add("key", new List{JSObject});           
 	
 	d["key"].Count;                                          //0  Gets the Count for the list 
 	
@@ -49,8 +49,8 @@ Some common methods and properties are implemented for List and Dictionary. The 
 	
 	d["key"] = 15;                                           //Converts the list in the dictionary to int with value 15 
 	
-	Dictionary{string, dynamic}.KeyCollection keys = d.Keys; //Gets the usual list of keys 
+	Dictionary{string, JSObject}.KeyCollection keys = d.Keys; //Gets the usual list of keys 
 	
-	Dictionary{string, dynamic} dict = d;                    //Gets the actual dictionary 
+	Dictionary{string, JSObject} dict = d;                    //Gets the actual dictionary 
 	
 	dict.GetEnumerator();                                    //Other methods available after conversion 
