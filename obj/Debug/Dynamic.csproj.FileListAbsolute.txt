@@ -1,0 +1,5 @@
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\Dynamic.csprojResolveAssemblyReference.cache
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\bin\Debug\Dynamic.exe
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\bin\Debug\Dynamic.pdb
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\Dynamic.exe
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\Dynamic.pdb

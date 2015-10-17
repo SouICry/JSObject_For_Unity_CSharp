@@ -1,0 +1,3 @@
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\JSObject_For_Unity_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\Dynamic.exe
+C:\Users\SouICry\Desktop\Dynamic\Dynamic\obj\Debug\Dynamic.pdb
